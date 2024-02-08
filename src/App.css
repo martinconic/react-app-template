@@ -299,7 +299,7 @@ ul {
 	color: #333; /* Text color */
   }
   
-  li:last-child {
+  li:last-item {
 	margin-bottom: 0; /* Remove margin for the last item */
 	border-bottom: none; /* Remove bottom border for the last item */
   }
