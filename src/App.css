@@ -1,0 +1,311 @@
+/* src/App.css */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Prevent scrolling when the menu is open */
+  }
+  
+  .App {
+	display: flex;
+	position: relative; /* Ensure proper stacking context */
+  }
+  
+  .header {
+	display: flex;
+	flex-direction: column; /* Change to column */
+	align-items: center;
+  }
+
+  a {
+	color: #1a237e; /* Set the color for active/clicked links to be the same as the default color */
+  }
+  
+  main {
+	flex-grow: 1;
+  }
+  
+  /* Customize the burger menu styles as needed */
+  .bm-burger-button {
+	position: fixed;
+	width: 24px;
+	height: 18px;
+	left: 20px;
+	top: 20px;
+  }
+  
+  .bm-burger-bars {
+	background: #373a47;
+  }
+  
+  .bm-burger-bars-hover {
+	background: #a90000;
+  }
+  
+  .bm-cross-button {
+	height: 24px;
+	width: 24px;
+  }
+  
+  .bm-cross {
+	background: #bdc3c7;
+  }
+  
+  .bm-menu {
+	background: #a0a2aa;
+	padding: 2.5em 1.5em 1em; /* Adjusted top padding for better spacing */
+	font-size: 1.15em;
+	border-radius: 8px; /* Optional: Add a slight border radius for a softer look */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+	color: #fff; /* Set text color to improve readability on the dark background */
+  }
+  
+  .bm-morph-shape {
+	fill: #373a47;
+  }
+  
+  .bm-item-list {
+	color: #b8b7ad;
+  }
+  
+  .bm-item {
+	display: inline-block;
+	padding: 10px;
+  }
+  
+  .bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 1; /* Ensure the overlay is above the content */
+  }
+
+  .scrollable-container {
+	max-height: 85vh; /* Adjust the maximum height as needed */
+	overflow-y: auto; /* Enable vertical scrollbar if the content overflows */
+	background-color: #f7f7f7; /* Soft background color */
+	margin: 5px;
+	padding: 10px;
+  }
+
+  .items-item {
+	padding: 15px;
+	box-sizing: border-box; /* Include padding and border in total width and height */
+	width: 100%; /* Make the item fill the width */
+	transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+  
+	/* Hover effect */
+	&:hover {
+		background-color: #f0f8ff; /* Change background color on hover */
+		transform: scale(1.02); /* Slightly scale the item on hover */
+	}
+  
+	/* Header styling */
+	b {
+	  font-size: 1.1em;
+	  color: #2c3e50; /* Header text color */
+	  margin-bottom: 5px;
+	}
+  
+	/* Text color and styling */
+	p {
+	  color: #333;
+	  font-size: 1em;
+	  margin: 0;
+	  line-height: 1.4;
+	}
+
+	  /* Add a border at the bottom for separation */
+	  border-bottom: 1px solid #ddd;
+  
+  }
+
+  .reports-container {
+	padding: 20px; /* Increase padding for better spacing inside the div */
+	margin: 20px; /* Increase margin to add space around the div */
+	background-color: #f0f0f0; /* Optional: Add a background color to the container */
+  }
+
+  .styled-link {
+	color: #1a237e; /* Set link color to dark blue */
+	text-decoration: none; /* Remove underlines from links */
+	display: block; /* Make links block-level for each link to appear on a new line */
+	font-size: 1.1em; /* Increase font size */
+	margin-bottom: 20px; /* Add some vertical spacing between links */
+	font-weight: bold; /* Set font weight to bold */
+	transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  }
+  
+  .styled-link:hover {
+	color: #0d47a1; /* Darker shade of blue on hover */
+  }
+  
+
+  .item-details {
+	padding: 15px;
+	box-sizing: border-box; /* Include padding and border in total width and height */
+	width: 100%; /* Make the item fill the width */
+	transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+  
+	/* Header styling */
+	b {
+	  font-size: 1.1em;
+	  color: #2c3e50; /* Header text color */
+	  margin-bottom: 5px;
+	}
+  
+	/* Text color and styling */
+	p {
+	  color: #333;
+	  font-size: 1em;
+	  margin: 0;
+	  line-height: 1.4;
+	}
+  
+  }
+
+  .item {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7; /* Soft background color */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-row {
+	margin-bottom: 10px;
+  }
+
+  strong {
+	color: #333;
+  }
+
+  /* Dashboard.css */
+  .scrollable-dashboard {
+	max-height: 85vh; /* Adjust the maximum height as needed */
+	overflow-y: scroll; /* Enable vertical scrollbar if the content overflows */
+	margin: 5px;
+	padding: 10px;
+  }
+
+.dashboard-card {
+	max-width: 600px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #f7f7f7; /* Soft background color */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-values {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .dashboard-value {
+	width: 48%;
+  }
+  
+  .dashboard-value h3 {
+	font-size: 16px;
+	margin-bottom: 8px;
+  }
+  
+  .dashboard-value p {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+  }
+  
+  .input-container {
+	text-align: right;
+	padding-right: 10px;
+  }
+  
+  .custom-input {
+	width: 150px;
+	padding: 4px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+  }
+  
+  .custom-input:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Additional styles to prevent unwanted zooming on mobile */
+  input {
+	touch-action: manipulation;
+  }
+  
+
+  .date-range-picker-container {
+	display: flex;
+	flex-direction: row;
+	margin-left: 15px;
+	margin-right: 10px;
+	touch-action: manipulation;
+  }
+  
+  .date-label {
+	margin: 8px;
+	font-weight: bold;
+  }
+  
+  .date-picker {
+	padding: 8px;
+	width: 70px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	touch-action: manipulation;
+  }
+
+  .date-picker-input {
+	touch-action: manipulation;
+  }
+
+  .calendar-container {
+	padding-left: 15px;
+  }
+  
+
+  
+ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  #header {
+	margin-bottom: 20px;
+	text-align: center;
+  }
+  
+  li {
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #ddd; /* Separator - add a bottom border */
+	color: #333; /* Text color */
+  }
+  
+  li:last-child {
+	margin-bottom: 0; /* Remove margin for the last item */
+	border-bottom: none; /* Remove bottom border for the last item */
+  }
+  
+  li:hover {
+	background-color: #f0f8ff;
+	color: #007bff; /* Text color on hover */
+	transition: background-color 0.3s ease-in-out;
+  }
