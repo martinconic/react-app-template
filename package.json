@@ -27,7 +27,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://martinconic.github.io/react-app-template",
   "eslintConfig": {
     "extends": [
       "react-app",
